@@ -1,0 +1,12 @@
+[mode]
+mode = "server"
+type = "kcp"
+
+[kcp]
+ACKNoDelay = false
+Mtu = 1000
+Internal = 1000
+
+[server]
+address = "127.0.0.1:4000"
+key = "abcdefghijklmnop"
