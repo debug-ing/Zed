@@ -1,0 +1,16 @@
+[mode]
+mode = "agent"
+type = "kcp"
+
+[kcp]
+ACKNoDelay = false
+Mtu = 1000
+Internal = 1000
+
+[agent]
+address = ":4000"
+key = "abcdefghijklmnop"
+ports = [
+    "8088:8080",
+    "9001:9000",
+]
