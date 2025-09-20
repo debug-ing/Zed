@@ -1,0 +1,15 @@
+run:
+  timeout: 2m
+  tests: true
+
+linters:
+  disable:
+    - errcheck
+    - staticcheck
+  enable:
+    - govet 
+    - unused      
+    - gofmt       
+
+issues:
+  exclude-use-default: false
